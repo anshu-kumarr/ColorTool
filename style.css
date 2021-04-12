@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  background-color: #3e4560;
+  color: white;
+}
+.wrapper {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.title {
+  text-align: center;
+  margin: 20px;
+  color: #d6d5ac;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+}
+.box {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-text {
+  font-size: 18px;
+}
+
+.toggle-btn {
+  height: 30px;
+  width: 60px;
+  background-color: gray;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.inner-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+  transform: translateX(30px);
+  background-color: #333;
+}
+
+.unselected {
+  opacity: 0.25;
+}
